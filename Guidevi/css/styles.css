@@ -1,0 +1,415 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+#AA3939 - vinröd standard
+#801515 - highlight
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54pt;
+	padding: 40px 0;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 36pt;
+}
+
+p {
+	font-size: 28pt;
+	
+}
+
+section {
+	width: 100%;
+}
+
+html {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#area p, #hidden p {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid;
+	margin: 10px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+
+}
+
+#hidden {
+	display: none;
+}
+
+.hidden.open {
+	-webkit-transition:height, 0.5s linear;
+    -moz-transition: height, 0.5s linear;
+    -ms-transition: height, 0.5s linear;
+    -o-transition: height, 0.5s linear;
+    transition: height, 0.5s linear;
+}
+
+button {
+	padding: 6px;
+	background: none;
+	border: 3px solid #fff;
+	/*box-shadow: 10px 10px 5px white;*/
+	margin: 6px 6px;
+	font-size: 18pt;
+	cursor: pointer;
+
+}
+
+/*button {
+	padding: 20px;
+	background: none;
+	border: 5px solid #fff;
+	box-shadow: 10px 10px 5px white;
+	margin: 10px 5px;
+	font-size: 32pt;
+	cursor: pointer;
+
+}*/
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#hidden_container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+section:nth-child(odd) {
+	color: #AA3939;
+	padding: 0;
+}
+
+section:nth-child(odd) button {
+	border: 5px solid #AA3939;
+	color: #AA3939;
+	-webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: 0.5s;
+
+}
+
+section:nth-child(even) button:focus {
+	color: #AA3939;
+	background-color: #fff;
+}
+
+/*section:nth-child(even) button:hover {
+	background-color: #ececec;
+}*/
+
+/*section:nth-child(odd) button:focus {
+	border: 5px solid #AA3939;
+	color: #fff;
+	background-color: #AA3939;
+}*/
+
+/*section:nth-child(odd) button:hover {
+	background-color: #ececec;
+}*/
+
+section:nth-child(even) {
+	background-color: #AA3939;
+	color: #fff;
+	padding: 70px 0;
+}
+
+section:nth-child(even) button {
+	color: #fff;
+}
+
+/*section:nth-last-child(2) button:focus {
+	background-color: #fff;
+}
+*/
+section:nth-last-child(2) {
+	background-color: #fff;
+}
+
+section #intro {
+	padding: 0!important;
+}
+
+.lack_skill {
+	padding: 6px;
+	border: 3px solid #AA3939;
+	display: inline-block;
+	margin: 6px 6px;
+	font-size: 18pt;
+	color: #AA3939!important;
+}
+
+.skills {
+	background-color: #fff;
+	
+	transition: 0.5s;
+}
+
+.focused {
+	background-color: #AA3939;
+	color: #fff !important;
+	transition: 0.5s;
+}
+
+/*Red background*/
+/*.skills {
+	background-color: #AA3939;
+	transition: 0.5s;
+}
+
+.focused {
+	background-color: #fff;
+	color: #AA3939 !important;
+	transition: 0.5s;
+}
+*/
+.match_box {
+	float: left;
+	position: relative;
+	width: 20vw;
+	height: 20vw;
+	background-color: #344BBF;
+	border-radius: 50%;
+	font-family: 'Anton', sans-serif;
+}
+
+.match {
+	font-size: 3vw;
+	text-align: center;
+	color: #fff;
+	 position:absolute;
+  top:70%; left:50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+.percentage {
+	font-size: 7vw;
+	color: #fff;
+	padding-top: 10vh;
+	text-align: center;
+	font-weight: bold;
+	 position:absolute;
+  top:25%; left:40%;
+  transform: translate(-50%, -50%);
+
+}
+
+.percentage {
+	font-size: 7vw;
+	color: #fff;
+	padding-top: 10vh;
+	text-align: center;
+	font-weight: bold;
+	 position:absolute;
+  top:25%; left:50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.result_container {
+	width: 100%;
+}
+
+.percentageToken {
+	font-size: 5vw;
+	color: #fff;
+  font-family: 'Noto Sans', sans-serif !important;
+
+}
+
+.show {
+	display: block !important;
+}
+
+.graph {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%; 
+	height: 800px;
+}
+
+.skill_box {
+	padding-left: 50px;
+	float: left;
+	width: 60%;
+	
+}
+
+.job_title {
+	text-decoration: underline;
+	color: #AA3939!important;
+}
+
+.title_left {
+	text-align: left !important;
+	color: #AA3939!important;
+}
+
+.prognose {
+	float: left;
+	width: 20%;
+}
+
+.match_me {
+	/*border: 5px solid #344BBF;*/
+	border-radius: 10px;
+	border: none!important;
+	display: block;
+	padding: 30px 50px;
+	font-size: 36pt;
+	font-weight: bold;
+	margin: 50px auto;
+	background-color: #344BBF;
+	color: #fff!important;
+}
+
+.match_container {
+	clear: both;
+	margin: 100px;
+	padding-bottom: 100px;
+}
+
+.container {
+	text-align: center;
+}
+
+#hidden_container {
+	text-align: center;
+}
+
+/*@media screen and (max-width: 1500px) {
+	.skill_box {
+		width: 100%;
+		float: none;
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	.skill_box h2 {
+		
+	}
+
+	.match_box {
+		width: 40vw;
+		float: none;
+		height: 40vw;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.percentage {
+		font-size: 10vw;
+	}
+
+	.match {
+		font-size: 5vw;
+	}
+
+	p {
+		font-size: 18pt;
+	}
+
+	button {
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.graph {
+		height: 400px;
+	}
+
+	.prognose {
+		float: none;
+		width: 100%;
+	}
+
+	.prognose h2 {
+		text-align: center;
+
+	}
+}
+*/
+@media screen and (max-width: 1000px) {
+
+	.match_box {
+		width: 40vw;
+		float: none;
+		height: 40vw;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.percentage {
+		font-size: 10vw;
+	}
+
+	.match {
+		font-size: 5vw;
+	}
+}
